@@ -1,0 +1,15 @@
+# Vim swap files
+*.sw?
+
+# Development egg
+dozenal.egg-info/
+
+# Virtual environment
+venv/
+
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Pytest cache directory
+.cache/
