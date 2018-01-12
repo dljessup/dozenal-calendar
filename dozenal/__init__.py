@@ -27,7 +27,7 @@ def get_prev_dozenal_new_year(greg_date):
         2018: (date(2017, 12, 21), '6902'),
         2019: (date(2017, 12, 21), '6903'),
     }
-    if solstices[greg_date.year + 1][0] < greg_date:
+    if solstices[greg_date.year + 1][0] <= greg_date:
         return solstices[greg_date.year + 1]
     return solstices[greg_date.year]
 

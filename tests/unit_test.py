@@ -44,3 +44,15 @@ def test_iso2doz_normal():
 
 def test_iso2doz_single_digit_day():
     assert dozenal.iso2doz('2017-10-22') == '6901-ᘔ-00'
+
+
+def test_iso2doz_presolstice():
+    assert dozenal.iso2doz('2017-12-20') == '6901-Ɛ-25'
+
+
+def test_iso2doz_solstice():
+    assert dozenal.iso2doz('2017-12-21') == '6902-0-00'
+
+
+def test_iso2doz_postsolstice():
+    assert dozenal.iso2doz('2017-12-22') == '6902-0-01'
