@@ -12,5 +12,13 @@ Installation
 Create a virtual environment and then run setup.py::
 
     $ python3 -m venv venv
-    $ source venv/bin/activate
-    $ python setup.py install
+    (venv)$ source venv/bin/activate
+    (venv)$ python setup.py install
+
+-------
+Testing
+-------
+
+Simply run py.test::
+
+    (venv)$ py.test
